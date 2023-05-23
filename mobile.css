@@ -85,13 +85,13 @@
         font-size: 0.7em;
         font-weight:800 ;
         color: white;
-        color: black;
+        /* color: black; */
         border-radius: 15px 15px white;
-        /* background-color: black; */
-        background-color: white;
+        background-color: black;
+        /* background-color: white; */
         text-decoration: none;
-        margin: 5px 0px;
-        padding: 5px 6px;
+        margin: 5px 2px;
+        padding: 5px 3px;
 
 
     }
