@@ -19,7 +19,7 @@
 
 
     <header id="myheader">
-        
+
         <div id="mylogo">
             <img src="image/logo1.jpg" alt="Unable to load the logo">
             <h2 id="name">Rahul <span id="title">_Mandal</span> </h2>
@@ -201,7 +201,8 @@
             <h2>Personal Portfolio</h2>
             <p>This is the personal Portfolio created by me .It consits of the skills i posses and the projects of mine
             </p>
-            <a href="https://github.com/Ryukendo-Rahul/My_Portfolio.git" class="work_link" target="_blank">Click here</a>
+            <a href="https://github.com/Ryukendo-Rahul/My_Portfolio.git" class="work_link" target="_blank">Click
+                here</a>
 
         </div>
         <div id="work3" class="work">
@@ -253,12 +254,14 @@
             </div>
 
             <div class="buttonCV">
-                <a href="my_cv.pdf" download , buttonCV "  >Download CV</a>
-                <!-- <button class=" buttonCV ">Download CV</button> -->
+
+                <a href="my_cv.pdf" download , buttonCV ,button >Download CV</a>
+                
+
             </div>
 
 
- 
+            
 
         </div>
 
@@ -277,11 +280,20 @@
                             <input id="take_text" type=" textarea" name="Message" placeholder="Enter Your Message:">
                         </div>
                         <div>
-                            <input class="button" type="submit" name="Submit" id=""">
+                            <input class="button" onclick="openPopup()" type="submit" name="Submit" id=""">
               </div>
                  
             </form>
+
+              <div class="popup" id="popup"> 
+                <img src="image/tick.png" >
+                <h2>Thank You! </h2>
+                <p>Your details have been sent </p>
+                 <button type="button" onclick="closePopup()">OK </button>
+              </div>
+
              <span id=" msg"></span>
+
                         </div>
 
             </div>
@@ -289,16 +301,19 @@
 
 
             <script>
-                var tablinks = document.getElementsByClassName(" tab_links"); var
-                    tabcontents = document.getElementsByClassName("tab_contents"); function opentab(tabname) {
-                        for
-                            (tablink of tablinks) { tablink.classList.remove("active_link"); } for (tabcontent of
-                            tabcontents) { tablink.classList.remove("active_tab"); }
-                        event.currentTarget.classList.add("active_link");
-                        document.getElementById(tabname).classList.add("active_tab");
-                    } </script>
+                var tablinks = document.getElementsByClassName(" tab_links");
+                var tabcontents = document.getElementsByClassName("tab_contents");
+                function opentab(tabname) {
+                    for
+                        (tablink of tablinks) { tablink.classList.remove("active_link"); } for (tabcontent of
+                        tabcontents) { tablink.classList.remove("active_tab"); }
+                    event.currentTarget.classList.add("active_link");
+                    document.getElementById(tabname).classList.add("active_tab");
+                } 
+            </script>
 
             <script>
+
                 const scriptURL = 'https://script.google.com/macros/s/AKfycbzVDxj9uURzqP96rZUtVHO5H1Kifu8WI1KMIwfe4sjevCwpxCzKderOUIQuJArPQc-P/exec'
                 const form = document.forms['submit-to-google-sheet']
                 const msg = document.getElementById("msg")
@@ -309,12 +324,41 @@
                             msg.innerHTML = "Message Sent Successfully"
                             setTimeout(function () {
                                 msg.innerHTML = ""
-                            }, 2000)
+                            }, 5000)
+
                             form.reset()
                         })
                         .catch(error => console.error('Error!', error.message))
                 })
             </script>
+
+
+
+
+      <script>
+
+        let popup = document.getElementById("popup");
+
+         function openPopup(){
+             popup.classList.add("open-popup");
+         }
+
+         function closePopup(){
+             popup.classList.remove("open-popup");
+         }
+
+
+      </script>
+
+
+
+
+
+
+
+
+
+
 </body>
 
 
