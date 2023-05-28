@@ -1,4 +1,4 @@
-/* ------------------------------------------------memdia------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------media------------------------------------------------------------------------------------------------------- */
 
 
 
@@ -290,7 +290,7 @@
 
         text-align: center;
         font-size: 1.4rem;
-        margin-top: 70px;
+        margin-top: 10px;
         padding: 0px 20px;
         color: white;
 
@@ -562,16 +562,84 @@
     }
 
     .buttonCV {
-        width: 150px;
+        width: 120px;
         height: 40px;
     }
 
-
+/* 
 
     .button:hover {
         background-color: #ea7047;
         transform: translateY(-5px);
-    }
+    } */
+
+    
+.button:active {
+
+    transform: scale(0.8);
+    background-color: #ff004f;
+    color: white;
+
+}
+
+
+.popup {
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    border-radius: 9px;
+    position:sticky;
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    color: black;
+    /* visibility: hidden; */
+    transition: transform(0.4s , top 0.4s);
+    bottom: 30%; 
+    
+}
+.open-popup{
+    visibility: visible;
+    transform: translate(10%, 10%) scale(1);
+    transition: 0.4s;
+}
+
+.popup img{
+    width: 80px;
+    margin-top: -60px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0 , 0 , 0, 0.2);
+    
+}
+
+.popup h2{
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 5px 0 10px;
+}
+.popup p{
+    color: black;
+    font-size: 10px;
+    font-weight: 500;
+    margin: 5px 0 10px; }
+
+.popup button{
+    width: 50%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 5px 5px;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0 , 0 , 0, 0.2);
+    
+
+}
 
 
 
@@ -640,6 +708,15 @@
         display: block;
         padding-top: 9px;
     }
+
+    #msg{
+        color: #61b752 ;
+        margin-top: -10px;
+        margin-left: 40px;
+        font-size: 15px;
+        display: block;
+    }
+    
 
 
 }
