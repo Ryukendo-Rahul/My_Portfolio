@@ -693,7 +693,8 @@
     }
 
     #myfooter {
-
+        bottom: 0%;
+        /* visibility: hidden;     */
         width: 115vw;
         height: 35px;
         background-color: #392028;
@@ -701,7 +702,6 @@
     }
 
     #myfooter p {
-
         font-size: 10px;
         width: 200px;
         /* margin: auto; */
