@@ -3,12 +3,13 @@
     margin: 0;
     padding: 0;
     color: white;
-    
+
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
+
 /* utility classes */
 
 
@@ -86,7 +87,7 @@ body {
     height: 25px;
     border-radius: 35px;
     padding-bottom: 5px;
-  
+
 
 }
 
@@ -595,39 +596,36 @@ body {
     background-color: #ff004f;
     cursor: pointer;
     color: white;
+    font-weight: 700;
     /* transition: background 0.5s, transform 0.5s; */
 }
 
 .buttonCV {
     border-radius: 8px;
-   
-    width: 200px;
+
+    width: 120px;
     height: 45px;
     background-color: #ff004f;
     cursor: pointer;
     color: white;
 }
 
-.buttonCV a{
+.buttonCV a {
     text-decoration: none;
     font-size: 15px;
     display: block;
     width: 100px;
     margin: auto;
     margin-top: 12px;
-    
+    padding: 2px 8px;
     transition: background 0.5s, transform 0.5s;
 }
 
-.buttonCV a:hover{
-    text-decoration: none;
-    transform: translateY(-2px);
-    
-}
+
 
 .button:hover {
     background-color: #ea7047;
-    
+
 }
 
 .buttonCV:hover {
@@ -635,12 +633,81 @@ body {
 
 }
 
+.button:active {
+
+    transform: scale(0.8);
+    background-color: #ff004f;
+    color: white;
+
+}
+
+.buttonCV:active {
+
+    transform: scale(0.8);
+    background-color: #ff004f;
+    color: white;
+
+}
+
+.popup {
+      
+    width: 200px;
+    height: 200px;
+    background: #fff;
+    border-radius: 9px;
+    position:sticky;
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    color: black;
+    visibility: hidden;
+    transition: transform(0.4s , top 0.4s);
+}
+
+.open-popup{
+    visibility: visible;
+    transform: translate(20%, -10%) scale(1);
+    transition: 0.4s;
+}
 
 
+.popup img{
+    width: 100px;
+    margin-top: -60px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0 , 0 , 0, 0.2);
+    
+}
 
+.popup h2{
+    color: black;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 20px 0 10px;
+}
+.popup p{
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 15px 0 10px;
+}
 
+.popup button{
+    width: 50%;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    padding: 5px 5px;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0 , 0 , 0, 0.2);
+    
 
-
+}
 
 
 /* -----------------------------------right--------------- */
@@ -651,6 +718,7 @@ body {
     /* border: 2px solid white; */
     width: 400px;
     height: 300px;
+
 
 }
 
@@ -685,18 +753,18 @@ body {
 
 }
 
-#msg{
-    color: #61b752 ;
+#msg {
+    color: #61b752;
     margin-top: -10px;
     margin-left: 40px;
-    font-size: 15px;
+    font-size: 35px;
     display: block;
 }
 
 
 
-#myfooter p{
-    
+#myfooter p {
+
     width: 200px;
     margin: auto;
     display: block;
