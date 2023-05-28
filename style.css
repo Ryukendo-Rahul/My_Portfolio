@@ -590,6 +590,7 @@ body {
 
 
 .button {
+    border: 2px solid #007bff;
     border-radius: 8px;
     width: 200px;
     height: 45px;
@@ -597,41 +598,34 @@ body {
     cursor: pointer;
     color: white;
     font-weight: 700;
-    /* transition: background 0.5s, transform 0.5s; */
+    transition: background 0.2s, transform 0.5s;
 }
 
-.buttonCV {
-    border-radius: 8px;
 
-    width: 120px;
-    height: 45px;
-    background-color: #ff004f;
-    cursor: pointer;
-    color: white;
-}
 
 .buttonCV a {
+
+     font-size: 15px;
+    border: 2px solid #007bff;
+    background-color: #ff004f;
+    padding: 10px;
+    color: white;
     text-decoration: none;
-    font-size: 15px;
-    display: block;
-    width: 100px;
-    margin: auto;
-    margin-top: 12px;
-    padding: 2px 8px;
-    transition: background 0.5s, transform 0.5s;
+    border-radius: 8px;
+    transition: background 0.2s, transform 0.5s;
+
 }
 
-
+.buttonCV a:hover {
+    background-color: #61b752;
+}
 
 .button:hover {
     background-color: #ea7047;
 
 }
 
-.buttonCV:hover {
-    background-color: #ea7047;
 
-}
 
 .button:active {
 
@@ -643,56 +637,57 @@ body {
 
 .buttonCV:active {
 
-    transform: scale(0.8);
-    background-color: #ff004f;
+    transform: scale(0.9);
+
     color: white;
 
 }
 
 .popup {
-      
+
     width: 200px;
     height: 200px;
     background: #fff;
     border-radius: 9px;
-    position:sticky;
+    position: sticky;
     text-align: center;
     padding: 0 30px 30px;
     color: #333;
     color: black;
     visibility: hidden;
-    transition: transform(0.4s , top 0.4s);
+    transition: transform(0.4s, top 0.4s);
 }
 
-.open-popup{
+.open-popup {
     visibility: visible;
     transform: translate(20%, -10%) scale(1);
     transition: 0.4s;
 }
 
 
-.popup img{
+.popup img {
     width: 100px;
     margin-top: -60px;
     border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0 , 0 , 0, 0.2);
-    
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
 }
 
-.popup h2{
+.popup h2 {
     color: black;
     font-size: 28px;
     font-weight: 600;
     margin: 20px 0 10px;
 }
-.popup p{
+
+.popup p {
     color: black;
     font-size: 18px;
     font-weight: 500;
     margin: 15px 0 10px;
 }
 
-.popup button{
+.popup button {
     width: 50%;
     margin-top: 30px;
     margin-bottom: 80px;
@@ -704,8 +699,8 @@ body {
     font-size: 18px;
     border-radius: 4px;
     cursor: pointer;
-    box-shadow: 0 5px 5px rgba(0 , 0 , 0, 0.2);
-    
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+
 
 }
 
@@ -764,7 +759,7 @@ body {
 
 
 #myfooter p {
-    
+
     width: 200px;
     margin: auto;
     display: block;
